@@ -2,6 +2,7 @@ import "./App.css";
 import Konva from "konva";
 import React, { useState, useEffect,useRef } from "react";
 import { Stage, Layer, Rect, Group, Text } from "react-konva";
+import Contribute from "./components/Contribute";
 
 function App() {
   const [x, setx] = useState(0);
@@ -122,7 +123,9 @@ function App() {
   
 
   return (
+    
     <div className="App">
+        <Contribute/>
       <div className="controls">
         <div>
           <h1>Rectangle Drawer</h1>
